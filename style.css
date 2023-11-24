@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/* Importações de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Definições de font-face */
+@font-face {
+    font-family: 'android';
+    src: url('font/good\ times\ rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos para o body */
+body {
+    background-color: #8D6ADA;
+    margin: 0;
+    text-align: justify;
+    text-align: center;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #F1F1F1;
+    height: 220px;
+    background-color: #5132A2;
+    max-height: max-content;
+}
+
+/* Estilos para o nav */
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #c9b4df;
+    margin-right: 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: #8D6ADA;
+    padding: 13px;
+}
+
+/* Estilos para os títulos */
+h1#titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 43px;
+    text-align: center;
+    padding: 12px;
+    padding-bottom: 3px;
+    margin: 0;
+    color: white;
+}
+
+h2#subtitulo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 60px;
+}
+
+/* Estilos para os headings */
+h2, h3 {
+    font-family: 'android', sans-serif;
+    color: #2f334e;
+}
+
+
+
+h3 {
+    background-color: #9d81d8;
+    padding: 2px;
+    padding-left: 6px;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    font-family: Arial, sans-serif;
+    background-color: #F1F1F1;
+    max-width: 800px;
+    margin: 1px auto 0;
+    padding: 20px;
+}
+
+/* Estilos para spans de destaque e links */
+span.destaque {
+    color: rgb(164, 0, 240);
+    font-weight: bold;
+}
+
+span.link > a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1px 3px;
+    background-color: #bf9fd1;
+    color: #331a74;
+}
+
+span.link::after {
+    content: '🌐';
+    background-color: #bf9fd1;
+    padding: 1px 3px;
+}
+
+/* Estilos para imagens */
+.img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-center {
+    text-align: center;
+}
+
+/* Estilos para um elemento específico com id 'video' */
+
+
+footer {
+    background-color: #F1F1F1;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+#sobre {
+    background-color: #c7b9e2;
+    max-width: 1000px;
+    height: 464px;
+    margin-bottom: 10px;
+    border-radius: 0px 30px;
+}
+
+article#video {
+    background-color: #331a74;
+}
+
+h2#fim {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #331a74;
+    color: #9d81d8;
+    border-radius: 0px 111px 0px 0px;
+    
+}
+
+ol#lista1 {
+    text-align: left;
+    list-style: none;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    margin-left: 4%;
+}
+ol#lista2 {
+    text-align: center;
+    list-style: none;
+}
+div#lista{
+    margin: 5%;
+}
+
+div#sobre2 {
+    margin: 8% 5% 5% 5%; 
+}
+#lista1, #lista2::before{
+    content: counter(decimal-counter) ". ";
+}
